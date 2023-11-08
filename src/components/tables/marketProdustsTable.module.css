@@ -1,0 +1,48 @@
+
+.marketTable {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.searchZone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.searchZone input {
+    width: 60%;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 1.2em;
+    width: 30%;
+}
+
+.flat {
+    grid-template-columns: 1fr ;
+}
+
+.grid {
+    grid-template-columns: repeat( 2 , 1fr );
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat( 3 , 1fr );
+    }
+}
+
+@media (min-width: 1024px) {
+    .marketTable {
+        gap: 0.8rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat( 3 , 1fr );
+    }
+}

@@ -1,0 +1,64 @@
+.main {
+    max-width: 1000px;
+    align-items: center;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quote {
+    background: var(--hvr-clr);
+    color: white;
+    max-width: 320px;
+    min-height: 240px ;
+    align-self: center;
+    justify-self: center;
+    font-weight: 700;
+    padding: 1rem;
+    position: relative;
+}
+
+.quote h2 {
+    color: var(--nut-clr);
+    margin: 3rem auto;
+}
+
+.quote::after {
+    content: ' ” ';
+    position: absolute;
+    background: var(--act-clr);
+    height: 38px;
+    width: 38px;
+    top: -20px;
+    right: 15px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 540px) {
+    .box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .boxes {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+}

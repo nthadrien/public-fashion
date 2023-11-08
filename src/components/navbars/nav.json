@@ -1,0 +1,25 @@
+{
+    "hommes" : [
+        { "name": "chemises", "route": "/" },
+        { "name": "t-shirt", "route": "/" },
+        { "name": "pantalon", "route": "/" },
+        { "name": "sous-vetements", "route": "/" }
+    ],
+    "femmes" : [
+        { "name": "chemises", "route": "/" },
+        { "name": "t-shirt", "route": "/" },
+        { "name": "pantalon", "route": "/" },
+        { "name": "sous-vetements", "route": "/" }
+    ],
+    "enfant" : [
+        { "name": "chemises", "route": "/" },
+        { "name": "t-shirt", "route": "/" },
+        { "name": "pantalon", "route": "/" },
+        { "name": "sous-vetements", "route": "/" }
+    ],
+    "Styles" : [
+        { "name" : "africaines", "to": "/" },
+        { "name" : "occidentales", "to": "/" },
+        { "name" : "asiatiques", "to": "/" }
+    ]
+}

@@ -1,0 +1,97 @@
+.header {
+    color: whitesmoke;
+    background: rgb(16, 7, 7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 40vh;
+}
+
+.slidesWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    grid-template-rows: 100%;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.slidesWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 20%;
+    color: white;
+}
+
+.slideIndicator {
+    position: absolute;
+    bottom: 24px;
+    left: calc(50% - 50px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100px;
+}
+
+.slideIndicator li {
+    height: 14px;
+    width: 14px;
+    border: 1px solid var(--act-clr);
+    transition: all 0.4s linear;
+}
+
+.slideIndicator .in {
+    background: var(--hvr-clr, rebeccapurple);
+}
+
+.btn {
+    background: var(--act-clr);
+    color: inherit;
+    padding: 0.8rem;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.slide:nth-of-type(1) {
+    background: rgba(33, 6, 48, 0.612) url('../../assets/imgs/chemises.jpg');
+}
+
+.slide:nth-of-type(2) {
+    background: rgba(12, 6, 48, 0.612) url('../../assets/imgs/chemises2.webp');
+}
+
+.slide:nth-of-type(3) {
+    background: rgba(28, 48, 6, 0.612) url('../../assets/imgs/model2.jpg') no-repeat;
+}
+
+.slide:nth-of-type(4) {
+    background: rgba(48, 12, 6, 0.612) url('../../assets/imgs/congo.jpg') no-repeat;
+}
+
+.slide:nth-of-type(1),
+.slide:nth-of-type(2),
+.slide:nth-of-type(3),
+.slide:nth-of-type(4) {
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}

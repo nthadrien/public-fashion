@@ -1,0 +1,53 @@
+.tables {
+    width: 100%;
+    border: 1px solid var(--nut-clr, #ddd);
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.tables table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tables tr {
+    border-bottom: 1px solid var(--nut-clr, #ddd);
+    height: 53px;
+}
+
+.tables th,
+td {
+    text-align: left;
+    min-width: 90px;
+    padding-left: 8px;
+}
+
+.table1 {
+    position: sticky;
+    left: 0;
+    background: white;
+    max-width: 300px;
+}
+
+/* width */
+.tables::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+}
+
+/* Track */
+.tables::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.tables::-webkit-scrollbar-thumb {
+    background: var( --hvr-clr ,#09245a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e2b2b;
+}

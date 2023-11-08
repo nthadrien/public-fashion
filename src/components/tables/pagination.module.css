@@ -1,0 +1,42 @@
+
+.pagination {
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    margin: 1rem auto;
+    gap: 12px;
+    width: 100%;
+}
+
+.label {
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+}
+
+.label select {
+    width: fit-content;
+    padding: 5px;
+    cursor: cell;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 2px;
+}
+
+.btnContainer button {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:transparent;
+    border-radius: 8px;
+    border: 1px solid var(--lgt-clr);
+}
+
+.btnContainer button:hover {
+    font-weight: 600;
+    background: var(--hvr-clr);
+    color: var( --lgt-clr);
+    border: 2px solid var(--hvr-clr);
+}

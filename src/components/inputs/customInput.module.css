@@ -1,0 +1,13 @@
+.inpContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inpContainer input[type='button']{
+    background: var(--act-clr);
+    color: var(--nut-clr);
+    cursor: pointer;
+    width: fit-content;
+    padding: 0 20px;
+}

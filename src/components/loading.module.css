@@ -1,0 +1,44 @@
+
+
+.loading {
+    min-height: 60vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: 1rem auto;
+    position: inherit;
+    /* animation: spinit 1.2s ease 0s infinite forwards none; */
+}
+
+.loading h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinnerLogo {
+    height: 120px;
+    width: 120px;
+    color: var(--act-clr);
+    animation: spinIt 2s linear 0s infinite normal;
+}
+
+@keyframes spinIt {
+    0% {
+        transform: rotate( 0deg);
+    }
+    25% {
+        transform: rotate( 90deg);
+    }
+    50% {
+        transform: rotate( 180deg);
+    }
+    75% {
+        transform: rotate( 280deg);
+    }
+    100% {
+        transform: rotate( 360deg );    
+    }
+}

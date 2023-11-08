@@ -1,0 +1,16 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: var(--max-wd, 1300px);
+}
+
+.inpts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

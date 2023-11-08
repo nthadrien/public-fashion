@@ -1,0 +1,18 @@
+
+
+.productsForm {
+    display: none;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.productsForm h4 {
+    color: var(--hvr-clr);
+}
+
+
+@media (min-width: 768px) {
+    .productsForm {
+        display: flex;
+    }
+}
